@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <p>This is my first calculator program</p>
+        <hr>
+
+        <input type="text" id="calc">
+
+        <br><br>
+
+
+        <button onclick="Digit('1')">1</button>
+        <button onclick="Digit('2')">2</button>
+        <button onclick="Digit('3')">3</button>
+        <button onclick="Digit('/')">/</button>
+
+        <br><br>
+
+
+        <button onclick="Digit('4')">4</button>
+        <button onclick="Digit('5')">5</button>
+        <button onclick="Digit('6')">6</button>
+        <button onclick="Digit('*')">*</button>
+
+
+        <br><br>
+
+
+
+        <button onclick="Digit('7')">7</button>
+        <button onclick="Digit('8')">8</button>
+        <button onclick="Digit('9')">9</button>
+        <button onclick="Digit('-')">-</button>
+
+
+        <br><br>
+
+
+        <button onclick="Digit('0')">0</button>
+        <button onclick="Digit('.')">.</button>
+        <button onclick="Digit('+')">+</button>
+        <button onclick="calculate('=')">=</button>
+
+
+        <br><br>
+
+        <button onclick="Ir()">Clear</button>
+    </div>
+
+
+    <script>
+        function Digit(c){
+            document.getElementById("calc").value +=c;
+        }
+
+
+        function calculate(){
+            var c =document.getElementById("calc");
+            var res =eval (c.value);
+            c.value =res;
+        }
+        function Ir(){
+            document.getElementById("calc").value= '';
+        }
+    </script>
+</body>
+
+</html>

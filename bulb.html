@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://spng.pngfind.com/pngs/s/146-1464365_fears-of-using-outsourced-telefundraising-donor-care-light.png" height=200px alt="" id="cfl">
+    <br>
+    <button id="btn" onclick="bulb()">TurnOn</button>
+    <script>
+        var flag= false;
+        function bulb(){
+            // document.getElementById();
+
+            if(flag == true){
+                document.getElementById("cfl") .setAttribute( "src" ,"https://spng.pngfind.com/pngs/s/146-1464365_fears-of-using-outsourced-telefundraising-donor-care-light.png")
+                flag=false;
+                document.getElementById("btn").innerText ="TurnOn"
+            }else{
+                document.getElementById("cfl") .setAttribute("src","https://tutorialspoint.dev/image/ONbulb.jpg")
+                flag=true;
+                document.getElementById("btn").innerText ="TurnOff"
+             }
+        }
+
+    </script>
+</body>
+</html>

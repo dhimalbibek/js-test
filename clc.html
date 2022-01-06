@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Practise more to design calculator</p> <hr>
+
+    <input type="text" name="" id="calc"><br>
+
+
+    <button onclick="add('1')">1</button>
+    <button onclick="add('2')">2</button>
+    <button onclick="add('3')">3</button>
+    <button onclick="add('/')">/</button>
+
+    <br><br>
+
+    <button onclick="add('4')">4</button>
+    <button onclick="add('5')">5</button>
+    <button onclick="add('6')">6</button>
+    <button onclick="add('*')">*</button>
+
+    <br><br>
+
+
+    <button onclick="add('7')">7</button>
+    <button onclick="add('8')">8</button>
+    <button onclick="add('9')">9</button>
+    <button onclick="add('-')">-</button>
+
+    <br><br>
+
+    <button onclick="add('0')">0</button>
+    <button onclick="add('.')">.</button>
+    <button onclick="add('+')">+</button>
+    <button onclick="btn()" >=</button>
+
+    <br><br>
+
+    <button onclick="clr()">AC</button>
+    <script>
+        function add(a){
+            var a = document.getElementById("calc").value += a;
+        }
+        function btn(){
+        var a=document.getElementById("calc");
+        var result=eval(a.value);
+        a.value=result;
+    }
+    function clr(){
+        document.getElementById("calc").value ="";
+    }
+    </script>
+</body>
+</html>
